@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta name="description" content="Get involved with Rotary Environment Foundation - donate, volunteer, or partner with us to support reforestation and environmental conservation."/>
+    <meta name="keywords" content="donate, volunteer, partner, get involved, Rotary Environment Foundation, environmental conservation"/>
+    <title>Get Involved - Rotary Environment Foundation</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4CAF50",
+                        "primary-dark": "#004d40",
+                        "accent": "#FFC107",
+                        "background-light": "#F5F5F5",
+                        "background-dark": "#101810",
+                        "card-light": "#FFFFFF",
+                        "card-dark": "#1A2C1A",
+                        "text-light-primary": "#0D1A0D",
+                        "text-light-secondary": "#4F4F4F",
+                        "text-dark-primary": "#E0E0E0",
+                        "text-dark-secondary": "#BDBDBD",
+                        "border-light": "#E0E0E0",
+                        "border-dark": "#334933"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light font-display text-text-light-primary">
+    <!-- Sticky Header -->
+    <header class="sticky top-0 z-50 w-full border-b border-solid border-border-light bg-background-light/80 backdrop-blur-sm transition-all duration-300">
+        <div class="mx-auto max-w-7xl px-6 lg:px-10">
+            <div class="flex items-center justify-between whitespace-nowrap py-3">
+                <div class="flex items-center gap-4">
+                    <a href="index.html" class="flex items-center gap-4">
+                        <div class="size-6 text-primary-dark">
+                            <svg fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-text-light-primary text-lg font-bold leading-tight tracking-[-0.015em]">Rotary Environment Foundation</h2>
+                    </a>
+                </div>
+                <div class="hidden lg:flex flex-1 justify-end gap-8">
+                    <div class="flex items-center gap-9">
+                        <a class="text-text-light-secondary hover:text-primary-dark text-sm font-medium leading-normal" href="index.html">Home</a>
+                        <a class="text-text-light-secondary hover:text-primary-dark text-sm font-medium leading-normal" href="about-us.html">About Us</a>
+                        <a class="text-text-light-secondary hover:text-primary-dark text-sm font-medium leading-normal" href="our-projects.html">Our Projects</a>
+                        <a class="text-primary-dark text-sm font-medium leading-normal font-bold" href="get-involved.html">Get Involved</a>
+                    </div>
+                    <button onclick="window.location.href='get-involved.html'" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-accent text-gray-900 text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+                        <span class="truncate">Donate</span>
+                    </button>
+                </div>
+                <div class="flex lg:hidden items-center gap-2">
+                    <button id="mobileMenuToggle" class="flex min-w-[40px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-2 bg-transparent text-text-light-primary">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+            </div>
+        </div>
+    </header>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-background-light border-b border-border-light sticky top-[73px] z-40">
+        <div class="mx-auto max-w-7xl px-6 lg:px-10">
+            <div class="flex flex-col py-4 gap-4">
+                <a class="text-text-light-secondary hover:text-primary-dark text-sm font-medium leading-normal" href="index.html">Home</a>
+                <a class="text-text-light-secondary hover:text-primary-dark text-sm font-medium leading-normal" href="about-us.html">About Us</a>
+                <a class="text-text-light-secondary hover:text-primary-dark text-sm font-medium leading-normal" href="our-projects.html">Our Projects</a>
+                <a class="text-primary-dark text-sm font-medium leading-normal font-bold" href="get-involved.html">Get Involved</a>
+                <button onclick="window.location.href='get-involved.html'" class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-accent text-gray-900 text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+                    <span class="truncate">Donate</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <main class="flex-1">
+                <section class="relative">
+                    <div class="w-full h-[60vh] min-h-[400px] max-h-[600px] bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAAbDQUQ0xJML5MxVNpm2maeL4UGxTdYQqj7EJZ_F5Hk7TipU91yMLIW73c0PUHcwSCp0Cu4on5ZkrAAOy4vdg0lkYJS30kD3peS-OP5Y5A9qFNfdg9tdjVxSrcdAKCSbrxil3JIw6XK7HpU_ZHq4EEyAoEvNqEsoR-M6110ouuJ7gC9S0W66SEs1X6mUqkXHkJ86OJbeL1DmBzAIXTyaGL9t_NKlLOsK6NjFRWA4GK5kQFPbO_FSTJWTZQxVLo_EWVorTcTgnpe7m0');">
+                        <div class="h-full w-full flex flex-col items-center justify-center text-center p-4">
+                            <div class="flex flex-col gap-4 max-w-3xl">
+                                <h1 class="text-white text-4xl font-black leading-tight tracking-tight md:text-6xl">Get Involved</h1>
+                                <p class="text-gray-200 text-lg md:text-xl font-normal leading-normal">Join the movement to restore India's ecosystems, revive water bodies, and create sustainable livelihoods through large-scale afforestation and community-based environmental projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="py-12 md:py-20 px-4 sm:px-6 lg:px-8">
+                    <div class="max-w-5xl mx-auto">
+                        <h2 class="text-3xl font-bold leading-tight tracking-tight text-center text-primary-dark">How You Can Help</h2>
+                        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div id="donate" class="flex flex-col gap-4 p-6 bg-card-light rounded-xl shadow-lg border border-border-light">
+                                <div class="mx-auto bg-primary/20 p-4 rounded-full w-fit">
+                                    <span class="material-symbols-outlined text-4xl text-primary-dark">park</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-primary-dark text-center">1. Plant a Tree</h3>
+                                <p class="text-text-light-secondary text-sm text-center">Sponsor a sapling, grove, or an acre of forest. Each contribution supports planting, nurturing, and local livelihood creation.</p>
+                                <p class="text-text-light-secondary text-xs text-center mt-2">₹ XX – one sapling | ₹ XX – mini grove | ₹XX – community grove</p>
+                                <button onclick="window.location.href='#donate'" class="mt-auto flex w-full min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary-dark text-white text-base font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+                                    <span class="truncate">Donate Now</span>
+                                </button>
+                            </div>
+                            <div class="flex flex-col gap-4 p-6 bg-card-light rounded-xl shadow-lg border border-border-light">
+                                <div class="mx-auto bg-primary/20 p-4 rounded-full w-fit">
+                                    <span class="material-symbols-outlined text-4xl text-primary-dark">groups</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-primary-dark text-center">2. Volunteer</h3>
+                                <p class="text-text-light-secondary text-sm text-center">Join our plantation drives, school programs, or field visits. Help track survival rates, engage students, and spread awareness in your community.</p>
+                                <button onclick="window.location.href='#volunteer'" class="mt-auto flex w-full min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary-dark text-white text-base font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+                                    <span class="truncate">Sign Up to Volunteer</span>
+                                </button>
+                            </div>
+                            <div class="flex flex-col gap-4 p-6 bg-card-light rounded-xl shadow-lg border border-border-light">
+                                <div class="mx-auto bg-primary/20 p-4 rounded-full w-fit">
+                                    <span class="material-symbols-outlined text-4xl text-primary-dark">handshake</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-primary-dark text-center">3. Partner through CSR</h3>
+                                <p class="text-text-light-secondary text-sm text-center">Collaborate on large-scale, auditable, and community-owned projects. REF ensures transparency, environmental compliance, and credible impact reporting.</p>
+                                <button onclick="window.location.href='#partner'" class="mt-auto flex w-full min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary-dark text-white text-base font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+                                    <span class="truncate">Partner With Us</span>
+                                </button>
+                            </div>
+                            <div class="flex flex-col gap-4 p-6 bg-card-light rounded-xl shadow-lg border border-border-light">
+                                <div class="mx-auto bg-primary/20 p-4 rounded-full w-fit">
+                                    <span class="material-symbols-outlined text-4xl text-primary-dark">business</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-primary-dark text-center">4. Club Participation</h3>
+                                <p class="text-text-light-secondary text-sm text-center">Rotary clubs can adopt REF projects, replicate models in their region, or link with local NGOs and governments.</p>
+                                <button onclick="window.location.href='#contact'" class="mt-auto flex w-full min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary-dark text-white text-base font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+                                    <span class="truncate">Contact REF</span>
+                                </button>
+                            </div>
+                            <div class="flex flex-col gap-4 p-6 bg-card-light rounded-xl shadow-lg border border-border-light">
+                                <div class="mx-auto bg-primary/20 p-4 rounded-full w-fit">
+                                    <span class="material-symbols-outlined text-4xl text-primary-dark">school</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-primary-dark text-center">5. Rotaract, Youth & School Engagement</h3>
+                                <p class="text-text-light-secondary text-sm text-center">Bring REF to your Rotaract Club, campus — conduct "Plant & Protect" sessions, tree drives, and eco-literacy activities that count towards Rotary's Green credits.</p>
+                                <button onclick="window.location.href='#contact'" class="mt-auto flex w-full min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary-dark text-white text-base font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+                                    <span class="truncate">Get Started</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="py-12 md:py-20 px-4 sm:px-6 lg:px-8 bg-card-light">
+                    <div class="max-w-5xl mx-auto text-center">
+                        <h2 class="text-3xl font-bold leading-tight tracking-tight text-primary-dark">Our Collective Impact</h2>
+                        <p class="mt-4 max-w-2xl mx-auto text-text-light-secondary">Together, with the help of our supporters, we are making a tangible difference.</p>
+                        <div class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+                            <div>
+                                <p class="text-4xl font-bold text-primary-dark">5M+</p>
+                                <p class="mt-2 text-text-light-secondary">Saplings Planted</p>
+                            </div>
+                            <div>
+                                <p class="text-4xl font-bold text-primary-dark">1,500+</p>
+                                <p class="mt-2 text-text-light-secondary">Acres Afforested</p>
+                            </div>
+                            <div>
+                                <p class="text-4xl font-bold text-primary-dark">8,000+</p>
+                                <p class="mt-2 text-text-light-secondary">Livelihoods Supported</p>
+                            </div>
+                        </div>
+                        <div class="mt-12">
+                            <h3 class="text-lg font-semibold text-text-light-secondary">Proudly Partnered With</h3>
+                            <div class="mt-6 flex justify-center items-center flex-wrap gap-x-8 gap-y-4">
+                                <img class="h-10 opacity-60" alt="Partner logo 1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVxopIngE1wEfpNzXmaGgpaXrV9_O4kACTiWWd4xGUV52120AcZjh_5ovdxRtJZsdCtgeCqZ2veh4gV2riRWuOLj49JAAaMCD1a2O5yPQ5kGKUGUENl7vYunYRo1uRY9xBv2Fi0k1JufLGQS9zjpde7DLp9rVYU_FXVmWpJaajIY-oHxzrCj11tOYzfeIXjhW7JTeGciLP5NgrqAO1bCLghAi_1wU7oXfIXTyC_U0M8In9oNNciXSrHT-6ApFrDcr1meEVuf4k495Z"/>
+                                <img class="h-10 opacity-60" alt="Partner logo 2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdZ5UPfq7Uu4w0fQZPwjo_lrZJMt4lNMZAc6FLimtwsvjX5KnWJCqu9eyaIds4f0EMbD0YBLsn3fhhh4eAKXHZvoMITE-EksjLgyOnyy2lJt2hvhbUBIG2tTaoACgYJRZbZpR1I-DL_IsnIYDEmpgLEEIliz6lL-Mz1-UdSAFIoK7AhG0nH3Z6ABw3DdYYwUbeTDdXBf8wyJiL-x3J4lTDvko-VBE7mTbAtwsSYvtqvIbG79-3py6EfMpk3BkQxqVjI9A361F24OjL"/>
+                                <img class="h-10 opacity-60" alt="Partner logo 3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgoPHK6uksMDfiJUA83WZpMlIfR-YZG4AXluB5kA3QGvaHJU3C7Nt1VwMyF7xiHWWNUCbh8Z7kMkotYdBdDIj3AJW_5pvw8Lld2lVrY9mpeEVAShhR2C2pKLRre2U2RSR8eS_j6wk1S1r83tNcULhEQL-Qtd8evRQFWbDo-psTNxxTI_vHNTzY3YcJdjrzW3Vtz_fmZM8md8Z9wJulFMQNSF14418KKNnOfAx5mOLRbplc6T58oKnm1mVXLF_cHN7B4cw-79grYEV8"/>
+                                <img class="h-10 opacity-60" alt="Partner logo 4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOHfbmHJ6xOZk3cqcI56eNE1FGIyAQop43wRvQWK2PWCgmnQtamQtnDp_BT0S4qKvfjDCSKa2-w9VJyoKKAXQwo8J7u4w4siQuNl_A0ZdsnANbyOs6n5cRmeqjCVUjyfsPPq9vrJ904lC9LJi8GVQLM1nXXhzBpbVTemDsSRXiQrfc03ZY2fa4fpCwHCd8Wfv6M2cxzg1hUFbvlVE4Jc0VZycbATrVkvZPBINsoUZMSJLLVCSzH6BGnky_zy9sMOpab1tO6Y1U4_hv"/>
+                                <img class="h-10 opacity-60" alt="Partner logo 5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfTR_fUxQOnlcCHeRuLmqM2Vc5gPLFvCdBbb5iZ2gk1d9fs1osZZBWCCvvJ5rO1gupvus2FC0XEcWqsw7yKQKdDe--2SCvF-0d3edDzGz18m1fX-laU0k6MDBm2CuFCFzfGH1bObBRr9VjoN5JE4GM7RLlAjioi3HFWd3rrRvc9WyR7C6zEoJ-h0vxmshY9r43yBNMd_nsLCvqS9ZSpI4i3urA6dd0XGZvEmv-J9gN2vgsNrCGAoaa2pn8iInlt-fpeJeNzR1pkrhf"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Be Part of the Change CTA -->
+                <section class="py-12 md:py-20 px-4 sm:px-6 lg:px-8">
+                    <div class="max-w-5xl mx-auto text-center bg-primary-dark rounded-xl p-10 md:p-16">
+                        <h2 class="text-white text-3xl font-bold leading-tight tracking-tight mb-4">Be Part of the Change</h2>
+                        <p class="text-gray-200 text-lg md:text-xl max-w-2xl mx-auto mb-8">Together, let's build a sustainable legacy for generations to come.</p>
+                        <div class="flex flex-wrap gap-4 justify-center">
+                            <button onclick="window.location.href='#donate'" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-accent text-gray-900 text-base font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+                                <span class="truncate">Donate Now</span>
+                            </button>
+                            <button onclick="window.location.href='#volunteer'" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-transparent border-2 border-white text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-white hover:text-primary-dark transition-colors">
+                                <span class="truncate">Volunteer</span>
+                            </button>
+                            <button onclick="window.location.href='#partner'" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-transparent border-2 border-white text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-white hover:text-primary-dark transition-colors">
+                                <span class="truncate">Partner With Us</span>
+                            </button>
+                            <button onclick="window.location.href='#contact'" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-transparent border-2 border-white text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-white hover:text-primary-dark transition-colors">
+                                <span class="truncate">Contact REF</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- Footer -->
+            <footer class="w-full bg-card-light border-t border-border-light">
+                <div class="mx-auto max-w-7xl px-6 lg:px-10 py-12">
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                        <div class="md:col-span-1">
+                            <h3 class="text-lg font-bold text-text-light-primary">Rotary Environment Foundation</h3>
+                            <p class="mt-2 text-sm text-text-light-secondary">Committed to protecting our planet through community-driven action.</p>
+                            <div class="flex gap-4 mt-4">
+                                <a class="text-text-light-secondary hover:text-primary-dark" href="#" aria-label="Twitter">
+                                    <svg class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z"></path></svg>
+                                </a>
+                                <a class="text-text-light-secondary hover:text-primary-dark" href="#" aria-label="GitHub">
+                                    <svg class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 9,21.5C9.08,21.5 9.16,21.5 9.25,21.5C9.75,21.5 10,21.22 10,20.84V18.2C10,18.2 10,18.2 10,18.19C8.33,18.5 7.67,17.21 7.67,17.21C7.17,15.93 6.5,15.61 6.5,15.61C5.5,14.93 6.58,14.93 6.58,14.93C7.69,15 8.2,16.04 8.2,16.04C9.2,17.75 10.95,17.24 11.5,16.97C11.58,16.34 11.83,15.91 12.12,15.66C9.62,15.38 7,14.5 7,10.74C7,9.66 7.38,8.78 8,8.1C7.92,7.82 7.5,6.77 8.08,5.5C8.08,5.5 9.04,5.22 11.5,6.86C12.42,6.61 13.4,6.48 14.38,6.48C15.36,6.48 16.34,6.61 17.26,6.86C19.7,5.22 20.66,5.5 20.66,5.5C21.24,6.77 20.82,7.82 20.74,8.1C21.36,8.78 21.74,9.66 21.74,10.74C21.74,14.53 19.12,15.38 16.62,15.66C16.99,15.97 17.25,16.57 17.25,17.44V20.84C17.25,21.22 17.5,21.5 18,21.5C18.09,21.5 18.17,21.5 18.25,21.5C22.13,20.17 25,16.42 25,12A10,10 0 0,0 12,2Z"></path></svg>
+                                </a>
+                                <a class="text-text-light-secondary hover:text-primary-dark" href="#" aria-label="LinkedIn">
+                                    <svg class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M18.5,5H5.5V19H18.5V5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M8,12A4,4 0 0,1 12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12Z"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-span-1">
+                            <h4 class="font-semibold text-text-light-primary">Quick Links</h4>
+                            <ul class="mt-4 space-y-2 text-sm">
+                                <li><a class="text-text-light-secondary hover:text-primary-dark" href="about-us.html">About Us</a></li>
+                                <li><a class="text-text-light-secondary hover:text-primary-dark" href="our-projects.html">Our Projects</a></li>
+                                <li><a class="text-text-light-secondary hover:text-primary-dark" href="index.html#impact">Impact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-span-1">
+                            <h4 class="font-semibold text-text-light-primary">Get Involved</h4>
+                            <ul class="mt-4 space-y-2 text-sm">
+                                <li><a class="text-text-light-secondary hover:text-primary-dark" href="get-involved.html">Donate</a></li>
+                                <li><a class="text-text-light-secondary hover:text-primary-dark" href="get-involved.html">Volunteer</a></li>
+                                <li><a class="text-text-light-secondary hover:text-primary-dark" href="get-involved.html">Partner With Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-span-1">
+                            <h4 class="font-semibold text-text-light-primary">Contact</h4>
+                            <ul class="mt-4 space-y-2 text-sm text-text-light-secondary">
+                                <li>3rd Floor, Hara House No. 1</li>
+                                <li>Hosur Main Road, Gutte Anjaneya Temple Street</li>
+                                <li>Wilson Garden, Bengaluru</li>
+                                <li>Karnataka 560027, India</li>
+                                <li class="mt-2"><a class="hover:text-primary-dark" href="mailto:info@rotaryref.org">info@rotaryref.org</a></li>
+                                <li><a class="hover:text-primary-dark" href="https://www.rotaryref.org" target="_blank">www.rotaryref.org</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-12 border-t border-border-light pt-8 text-center">
+                        <p class="text-sm text-text-light-secondary">© 2024 Rotary Environment Foundation. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="js/navigation.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/sticky-header.js"></script>
+</body>
+</html>
+
